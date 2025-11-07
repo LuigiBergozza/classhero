@@ -4,11 +4,21 @@ export const BottomNavbar = () => {
   return (
     <div className="rounded-xl lg:space-y-3">
       <div className="hover:bg-hover/40 flex cursor-pointer items-center justify-center gap-5 rounded-sm brightness-150 transition-all hover:brightness-125">
-        <span className="text-secondary text-xs font-semibold">Home</span>
-        <span className="text-secondary text-xs font-semibold">História</span>
-        <span className="text-secondary text-xs font-semibold">Produtos</span>
-        <span className="text-secondary text-xs font-semibold">Contato</span>
-        <span className="text-secondary text-xs font-semibold">Profile</span>
+        <Link to="/" className="text-secondary text-xs font-semibold">
+          <span className="font-semibold">Home</span>
+        </Link>
+        <Link to="/empresa" className="text-secondary text-xs font-semibold">
+          <span className="font-semibold">To be Hero</span>
+        </Link>
+        <Link to="/produto" className="text-secondary text-xs font-semibold">
+          <span className="font-semibold">Produto</span>
+        </Link>
+        <Link to="/contato" className="text-secondary text-xs font-semibold">
+          <span className="font-semibold">Contato</span>
+        </Link>
+        <Link to="/more" className="text-secondary text-xs font-semibold">
+          <span className="font-semibold">More</span>
+        </Link>
       </div>
       <hr className="text-secondary hidden lg:flex" />
       <div className="hidden justify-between gap-1 text-center lg:flex">
